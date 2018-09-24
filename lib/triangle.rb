@@ -4,7 +4,7 @@ class Triangle
   end
   
   def kind
-    raise TriangleError if @sides[0] <= 0.0 or @sides[0]+@sides[1]<=sides[2]
+    raise TriangleError if @sides[0] <= 0.0 or @sides[0]+@sides[1]<=@sides[2]
     return :equilateral if @sides[0]==@sides[1] and @sides[1]==@sides[2]
     return :isosceles if @sides[0]==@sides[1] or @sides[1]==@sides[2]
     :scalene
