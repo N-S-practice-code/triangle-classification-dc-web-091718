@@ -4,7 +4,7 @@ class Triangle
   end
   
   def kind
-    if 
+    raise TriangleError if @sides[0] <= 0.0
   end
  
   class TriangleError < StandardError
