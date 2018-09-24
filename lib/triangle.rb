@@ -6,6 +6,7 @@ class Triangle
   def kind
     raise TriangleError if @sides[0] <= 0.0 or @sides[0]+@sides[1]<@sides[2]
     return :equilateral if @sides[0]==@sides[1] and @sides[1]==@sidesp[2]
+    return :equilateral if @sides[0]==@sides[1] or @sides[1]==@sidesp[2]
     
   end
  
