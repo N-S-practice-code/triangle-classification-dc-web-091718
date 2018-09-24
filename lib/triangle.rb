@@ -1,6 +1,6 @@
 class Triangle
   def initialize(s1,s2,s3)
-    @s1=s1
+    @sides=s1
   end
   
   def kind
